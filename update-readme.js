@@ -4,8 +4,7 @@ const https = require('https')
 
 function readWriteAsync () {
   // Create string of markdown to be inserted
-  const updatedMd = `URL: [brt](http://localhost:3000/) \n \n \n ![alt text](https://raw.githubusercontent.com/djiangdev/Build-a-screenshot-pipeline/main/screenshot.png?raw=true)`
-
+  const updatedMd = `URL: [brt](http://localhost:3000/) \n \n \n ![alt text](https://github.com/brtmht/-cicd-_snapshot-backend/blob/main/screenshot.png?raw=true)`
   // Update README using FS
   fs.readFile('README.md', 'utf-8', (err, data) => {
     if (err) {
