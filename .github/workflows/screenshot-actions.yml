@@ -41,8 +41,8 @@ jobs:
     - name: Commit and push if changed
       run: |-
         git diff
-        git config --global user.email "dinhgiang2611@gmail.com"
-        git config --global user.name "djiangdev"
+        git config --global user.email "bharat.onclick@gmail.com"
+        git config --global user.name "brtmht"
         git add -A
         git commit -m "Updated screenshot" || exit 0
         git push
