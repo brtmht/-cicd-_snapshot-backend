@@ -9,7 +9,7 @@ describe('jest-image-snapshot', () => {
 
   it('works', async () => {
     const page = await browser.newPage()
-    await page.goto('http://localhost:3000/')
+    await page.goto(`https://cicd-snapshot-frontend.vercel.app/`)
     const image = await page.screenshot({ path: 'screenshot.png' })
     console.log("===========hhhhhh",image)
     expect(image).toMatchImageSnapshot()
