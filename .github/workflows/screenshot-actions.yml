@@ -28,14 +28,14 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-#     - run: npm test
+    - run: npm test
       env:
         CI: true
 
     # Run script "updateReadme.js" 
-#     - name: Update README.md
-#       run: |-
-#         node update-readme.js
+    - name: Update README.md
+      run: |-
+        node update-readme.js
 
     # Commit changes
     - name: Commit and push if changed
